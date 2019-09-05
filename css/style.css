@@ -8,6 +8,12 @@ body {
     grid-template-columns: 100vw;
     margin: 0;
 }
+header {
+    height: 220px;
+    grid-area: banner;
+    background-image: url(../images/Siri-Cascudo-Lanches.png);
+    background-size: cover;
+}
 nav {
     grid-area: nav;
     background-color: #d3bbde;
