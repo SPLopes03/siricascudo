@@ -31,11 +31,14 @@ nav {
     height: 45px;
     padding: 0 10px;
 }
-nav div {
+nav div:nth-child(2){
     display: flex;
     flex-direction: column;
     height: 20px;
     justify-content: space-between;
+}
+nav div:nth-child(3){
+    display: none;
 }
 nav div span {
     background-color: black;
@@ -54,10 +57,33 @@ section {
 }
 section .funcionarios {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center; 
     flex-direction: column;
 }
 section .funcionarios div img {
     width: 100px;
+}
+@media(min-width:580px) {
+    nav div a{
+        font-size: 15pt;
+        text-decoration: none;
+    }
+    nav div:nth-child(2){
+        display: none;
+    }
+    nav div:nth-child(3){
+        display: block;
+    }
+    section .funcionarios {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100vw;
+    }
+}
+@media(min-width:710px){
+    header{
+        background-image: url(../images/abacaxi.png)
+    }
 }
