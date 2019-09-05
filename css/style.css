@@ -14,6 +14,14 @@ header {
     background-image: url(../images/Siri-Cascudo-Lanches.png);
     background-size: cover;
 }
+main {
+    grid-area: main;
+    background-color: #fc9e9e;
+}
+main h1, main p {
+    text-align: center;
+    font-family: sans-serif;
+}
 nav {
     grid-area: nav;
     background-color: #d3bbde;
@@ -36,4 +44,20 @@ nav div span {
 }
 nav img {
     width: 40px;
+}
+section {
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+section .funcionarios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    flex-direction: column;
+}
+section .funcionarios div img {
+    width: 100px;
 }
